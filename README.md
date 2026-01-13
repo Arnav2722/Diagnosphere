@@ -84,7 +84,7 @@ flask run
 
 ```
 cd templates
-index.html
+index1.html
 ```
 
 ## Technical aspect

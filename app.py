@@ -1,3 +1,5 @@
+
+
 from flask import Flask, render_template, request, flash, redirect
 import pickle
 import numpy as np
@@ -32,7 +34,7 @@ def predict(values, dic):
 
 @app.route("/")
 def home():
-    return render_template("index1.html")
+    return render_template("index.html")
 
 
 @app.route("/contactus")
@@ -47,32 +49,32 @@ def aboutUs():
 
 @app.route("/diabetes", methods=["GET", "POST"])
 def diabetesPage():
-    return render_template("diabetes1.html")
+    return render_template("diabetes.html")
 
 
 @app.route("/cancer", methods=["GET", "POST"])
 def cancerPage():
-    return render_template("breast_cancer1.html")
+    return render_template("breast_cancer.html")
 
 
 @app.route("/heart", methods=["GET", "POST"])
 def heartPage():
-    return render_template("heart1.html")
+    return render_template("heart.html")
 
 
-@app.route("/kidney", methods=["GET", "POST"]) 
+@app.route("/kidney", methods=["GET", "POST"])
 def kidneyPage():
-    return render_template("kidney1.html")
+    return render_template("kidney.html")
 
 
 @app.route("/liver", methods=["GET", "POST"])
 def liverPage():
-    return render_template("liver1.html")
+    return render_template("liver.html")
 
 
 @app.route("/malaria", methods=["GET", "POST"])
 def malariaPage():
-    return render_template("malaria1.html")
+    return render_template("malaria.html")
 
 
 @app.route("/predict", methods=["POST", "GET"])
@@ -84,7 +86,7 @@ def predictPage():
             pred = predict(to_predict_list, to_predict_dict)
     except:
         message = "Please enter valid Data"
-        return render_template("index1.html", message=message)
+        return render_template("index.html", message=message)
 
     return render_template("predict.html", pred=pred)
 
@@ -103,7 +105,7 @@ def malariapredictPage():
                 pred = np.argmax(model.predict(img)[0])
         except:
             message = "Please upload an Image"
-            return render_template("malaria1.html", message=message)
+            return render_template("malaria.html", message=message)
     return render_template("malaria1_predict.html", pred=pred)
 
 

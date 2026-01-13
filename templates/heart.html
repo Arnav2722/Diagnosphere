@@ -20,36 +20,45 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="sex"
-                                    placeholder="sex(Male:1, female:0)">
+                                    placeholder="If Male then 1, if Female then 0">
+                                <p>Gender</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="cp"
-                                    placeholder="chest pain type">
+                                <select style="border: 1px solid black;" name="chestPain" id="chestPain">
+                                    <option value="0">0 = No Pain</option>
+                                    <option value="1">1 = Very less Pain</option>
+                                    <option value="2">2 = Not too extreme Pain</option>
+                                    <option value="3">3 = Extreme Pain</option>
+                                </select>
+                                <!-- <input style="border: 1px solid black;" class="form-control" type="text" name="cp"
+                                    placeholder="Chest Pain Intensity"> -->
+
                             </div>
-                            <p>0 to 3 as worst</p>
+                            <p>Chest Pain Intensity</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="trestbps"
-                                    placeholder="resting blood pressure in mm Hg">
+                                    placeholder="Eg:- 120/80 mmHg">
+                                <p>resting blood pressure in mm Hg</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="chol"
-                                    placeholder="serum cholestoral in mg/dl">
+                                    placeholder="Eg:- 200mg/dL">
                                 <p>serum cholestoral in mg/dl</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="fbs"
-                                    placeholder="fasting blood sugar 120 mg/dl(1 = true; 0 = false)">
-                                <p>(fasting blood sugar 120 mg/dl) (1 = true; 0 = false)</p>
+                                    placeholder="1 = true; 0 = false">
+                                <p>fasting blood sugar 120 mg/dl</p>
                             </div>
                         </div>
                     </div>
