@@ -10,145 +10,236 @@
             <br>
             <div class="card card-body" style="border: 1px solid black;">
                 <form class="form-horizontal" action="{{ url_for('predictPage') }}" method="POST">
+
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="age"
-                                    placeholder="age">
-                                <p>Age(numerical) in years</p>
+                                    placeholder="Age" required>
+                                <p>Age (years)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="bp"
-                                    placeholder="bp">
-                                <p>Blood Pressure(numerical) in mm/Hg</p>
+                                    placeholder="BP" required>
+                                <p>Blood Pressure (mm/Hg)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="al"
-                                    placeholder="al">
-                                <p>Albumin(nominal)-(0,1,2,3,4,5)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="sg">
+                                    <option value="1.005">1.005</option>
+                                    <option value="1.010">1.010</option>
+                                    <option value="1.015">1.015</option>
+                                    <option value="1.020">1.020</option>
+                                    <option value="1.025">1.025</option>
+                                </select>
+                                <p>Specific Gravity</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="su"
-                                    placeholder="su">
-                                <p>Sugar(nominal)-(0,1,2,3,4,5)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="al">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <p>Albumin (0-5)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="rbc"
-                                    placeholder="rbc">
-                                <p>Red Blood Cells(nominal)-(normal,abnormal)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="su">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <p>Sugar (0-5)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="pc"
-                                    placeholder="pc">
-                                <p>Pus Cell (nominal)-(normal,abnormal)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="rbc">
+                                    <option value="1">normal</option>
+                                    <option value="0">abnormal</option>
+                                </select>
+                                <p>Red Blood Cells</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="pcc"
-                                    placeholder="pcc">
-                                <p>Pus Cell clumps(nominal)-(present,notpresent)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="pc">
+                                    <option value="1">normal</option>
+                                    <option value="0">abnormal</option>
+                                </select>
+                                <p>Pus Cell</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="ba"
-                                    placeholder="ba">
-                                <p>Bacteria(nominal)-(present,notpresent)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="pcc">
+                                    <option value="1">present</option>
+                                    <option value="0">not present</option>
+                                </select>
+                                <p>Pus Cell Clumps</p>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select style="border: 1px solid black;" class="form-control" name="ba">
+                                    <option value="1">present</option>
+                                    <option value="0">not present</option>
+                                </select>
+                                <p>Bacteria</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="bgr"
-                                    placeholder="bgr">
-                                <p>Blood Glucose Random(numerical) in mgs/dl</p>
+                                    placeholder="BGR" required>
+                                <p>Blood Glucose Random</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="bu"
-                                    placeholder="bu">
-                                <p>Blood Urea(numerical) in mgs/dl</p>
+                                    placeholder="BU" required>
+                                <p>Blood Urea</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="sc"
-                                    placeholder="sc">
-                                <p>Serum Creatinine(numerical) in mgs/dl</p>
+                                    placeholder="SC" required>
+                                <p>Serum Creatinine</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input style="border: 1px solid black;" class="form-control" type="text" name="sod"
+                                    placeholder="Sodium" required>
+                                <p>Sodium (mEq/L)</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="pot"
-                                    placeholder="pot">
-                                <p>Potassium(numerical) in mEq/L</p>
-                                <p></p>
+                                    placeholder="Pot" required>
+                                <p>Potassium (mEq/L)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input style="border: 1px solid black;" class="form-control" type="text" name="hemo"
+                                    placeholder="Hemo" required>
+                                <p>Hemoglobin (gms)</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input style="border: 1px solid black;" class="form-control" type="text" name="pcv"
+                                    placeholder="PCV" required>
+                                <p>Packed Cell Volume</p>
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input style="border: 1px solid black;" class="form-control" type="text" name="wc"
-                                    placeholder="wc">
-                                <p>White Blood Cell Count(numerical) in cells/cumm</p>
+                                    placeholder="WBC" required>
+                                <p>White Blood Cell Count</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="htn"
-                                    placeholder="htn">
-                                <p>Hypertension(nominal)-(yes,no)</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="dm"
-                                    placeholder="dm">
-                                <p>Diabetes Mellitus(nominal)-(yes,no)</p>
+                                <input style="border: 1px solid black;" class="form-control" type="text" name="rc"
+                                    placeholder="RC" required>
+                                <p>Red Blood Cell Count</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="cad"
-                                    placeholder="cad">
-                                <p>Coronary Artery Disease(nominal)-(yes,no)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="htn">
+                                    <option value="1">yes</option>
+                                    <option value="0">no</option>
+                                </select>
+                                <p>Hypertension</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="pe"
-                                    placeholder="pe">
-                                <p>Pedal Edema(nominal)-(yes,no)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="dm">
+                                    <option value="1">yes</option>
+                                    <option value="0">no</option>
+                                </select>
+                                <p>Diabetes Mellitus</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input style="border: 1px solid black;" class="form-control" type="text" name="ane"
-                                    placeholder="ane">
-                                <p>Anemia(nominal)-(yes,no)</p>
+                                <select style="border: 1px solid black;" class="form-control" name="cad">
+                                    <option value="1">yes</option>
+                                    <option value="0">no</option>
+                                </select>
+                                <p>Coronary Artery Disease</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select style="border: 1px solid black;" class="form-control" name="appet">
+                                    <option value="1">good</option>
+                                    <option value="0">poor</option>
+                                </select>
+                                <p>Appetite</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select style="border: 1px solid black;" class="form-control" name="pe">
+                                    <option value="1">yes</option>
+                                    <option value="0">no</option>
+                                </select>
+                                <p>Pedal Edema</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select style="border: 1px solid black;" class="form-control" name="ane">
+                                    <option value="1">yes</option>
+                                    <option value="0">no</option>
+                                </select>
+                                <p>Anemia</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <input type="submit" class="btn btn-info btn-block" value="Predict">
                 </form>
             </div>
