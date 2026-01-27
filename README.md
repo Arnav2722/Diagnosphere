@@ -116,15 +116,18 @@ This webapp was developed using Flask Web Framework. The models used to predict 
 ==> Python version 3.6.8 was used for the whole project.<br> -->
 
 **Dataset Links**
-All the datasets were used from kaggle.
+All the datasets were used from kaggle and drive.
 
-- [Diabetes Dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
+- [CSV Dataset](https://www.kaggle.com/datasets/arnav22215027/diagnosphere-csv-dataset)
+- [Image Dataset](https://drive.google.com/drive/folders/1INwJbORQ4vTgcD-nTVLG1_vUfPLDzwBD?usp=sharing)
+
+<!-- - [Diabetes Dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
 - [Breast Cancer Dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 - [Heart Disease Dataset](https://www.kaggle.com/ronitf/heart-disease-uci)
 - [Kidney Disease Dataset](https://www.kaggle.com/mansoordaku/ckdisease)
-- [Liver Disease Dataset](https://www.kaggle.com/uciml/indian-liver-patient-records)
+- [Liver Disease Dataset](https://www.kaggle.com/uciml/indian-liver-patient-records) -->
 
 ## Team
 
 [Arnav Sharma](https://github.com/Arnav2722) <br>
-[Jahnvi Sharma]()
+[Jahnvi Sharma](https://github.com/jahnvi02-star)
