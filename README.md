@@ -1,4 +1,4 @@
-# Medical_Diagnosis | A Machine Learning Based Web Application
+# Diagnosphere | A ML Based Web Application
 
 ![Pyhon 3.4](https://img.shields.io/badge/ide-Jupyter_notebook-blue.svg) ![Python](https://img.shields.io/badge/Language-Python-brightgreen.svg) ![Frontend](https://img.shields.io/badge/Frontend-Bootstrap-purple.svg)
 
@@ -111,9 +111,9 @@ This webapp was developed using Flask Web Framework. The models used to predict 
 | Malaria        | Deep Learning Model(CNN) | 94.78%   |
 | Pneumonia      | Deep Learning Model(CNN) | 95%      |
 
-**NOTE**
+<!-- **NOTE**
 <br>
-==> Python version 3.6.8 was used for the whole project.<br>
+==> Python version 3.6.8 was used for the whole project.<br> -->
 
 **Dataset Links**
 All the datasets were used from kaggle.
@@ -127,4 +127,4 @@ All the datasets were used from kaggle.
 ## Team
 
 [Arnav Sharma](https://github.com/Arnav2722) <br>
-[Mehul Verma](https://www.mehulverma.netlify.app)
+[Jahnvi Sharma]()
