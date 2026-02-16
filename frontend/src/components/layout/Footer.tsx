@@ -30,8 +30,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs">
-              AI-powered medical diagnosis platform using advanced machine
-              learning for accurate health predictions.
+              Medical diagnosis platform using advanced ML Models for accurate
+              health predictions.
             </p>
             <div className="flex items-center gap-3 ml-24">
               <a
