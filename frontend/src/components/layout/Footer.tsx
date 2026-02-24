@@ -40,12 +40,6 @@ export function Footer() {
               >
                 <Github className="h-4 w-4" />
               </a>
-              {/* <a
-                href="#"
-                className="p-2 rounded-lg bg-secondary hover:bg-primary/10 hover:text-primary transition-colors"
-              >
-                <Twitter className="h-4 w-4" />
-              </a> */}
               <a
                 href="https://github.com/jahnvi02-star"
                 className="p-2 rounded-lg bg-secondary hover:bg-primary/10 hover:text-primary transition-colors"
