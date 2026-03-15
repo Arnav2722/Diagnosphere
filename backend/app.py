@@ -18,7 +18,7 @@ MODELS = {}
 def init_models():
     print("Initializing models... please wait.")
     try:
-        # Load Scikit-learn models (Pickle)
+        # Load Scikit-learn models (Pickle) ihfiehnri
         for m_name in ["diabetes", "heart", "breast_cancer", "kidney", "liver"]:
             path = os.path.join(BASE_DIR, "models", f"{m_name}.pkl")
             if os.path.exists(path):
