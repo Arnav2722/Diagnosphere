@@ -18,7 +18,7 @@ MODELS = {}
 def init_models():
     print("Initializing models... please wait.")
     try:
-        # Load Scikit-learn models (Pickle) ihfiehnri
+        # Load Scikit-learn models (Pickle)
         for m_name in ["diabetes", "heart", "breast_cancer", "kidney", "liver"]:
             path = os.path.join(BASE_DIR, "models", f"{m_name}.pkl")
             if os.path.exists(path):
@@ -41,7 +41,7 @@ def init_models():
         print(f"Error loading models: {e}")
 
 
-# Call initialization
+# Call initialization (it initializes the MODELS dictionary)
 init_models()
 
 
