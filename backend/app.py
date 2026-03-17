@@ -25,7 +25,7 @@ def init_models():
                 with open(path, "rb") as f:
                     MODELS[m_name] = pickle.load(f)
 
-        # Load Keras models (H5)
+        # Load Keras models (Pneumopnia and Malaria)
         malaria_path = os.path.join(BASE_DIR, "models", "malaria.h5")
         if os.path.exists(malaria_path):
             MODELS["malaria"] = load_model(malaria_path)
