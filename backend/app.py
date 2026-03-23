@@ -13,7 +13,6 @@ CORS(app)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODELS = {}
-# kbnidgbiodb
 
 def init_models():
     print("Initializing models... please wait.")
