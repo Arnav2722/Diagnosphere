@@ -62,7 +62,7 @@ def predict():
             "kidney-disease": "kidney",
             "liver-disease": "liver",
         }
-        # Hint: feature counts for each disease written here
+        # Hint: feature counts for each disease written here for reference:
         # diabetes=8
         # breast-cancer=26
         # heart disease=13
