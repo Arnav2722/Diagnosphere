@@ -64,7 +64,7 @@ def predict():
         }
         # Hint: feature counts for each disease written here for reference:
         # diabetes=8 features
-        # breast-cancer=26
+        # breast-cancer=26 features
         # heart disease=13
         # liver =9
         # kidney =24
