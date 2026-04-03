@@ -14,6 +14,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MODELS = {}
 
+
 def init_models():
     print("Initializing models... please wait.")
     try:
@@ -63,7 +64,7 @@ def predict():
             "liver-disease": "liver",
         }
         # Hint: feature counts for each disease written here for reference:
-        # diabetes=8 features
+        # diabetes =8 features
         # breast-cancer=26 features
         # heart disease=13
         # liver =9
@@ -114,7 +115,7 @@ def predict_image():
             pred_class = np.argmax(prediction[0])
 
             if pred_class == 0:
-                msg, status = "Infection detected (Parasitized)", 1
+                msg, status = "Infection detected (Parasitized)!", 1
             else:
                 msg, status = "Clear (Uninfected)", 0
 
